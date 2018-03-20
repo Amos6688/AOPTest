@@ -5,7 +5,7 @@ package concert;
  */
 public interface Performance
 {
-    public void perform();
+     void perform();
 
-    public void exit();
+     void exit();
 }
