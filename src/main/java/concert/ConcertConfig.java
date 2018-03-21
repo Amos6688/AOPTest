@@ -26,4 +26,10 @@ public class ConcertConfig
     {
         return new Dancing();
     }
+
+    @Bean
+    public EncoreableIntroducer encoreableIntroducer()
+    {
+        return new EncoreableIntroducer();
+    }
 }

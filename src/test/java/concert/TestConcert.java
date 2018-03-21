@@ -17,8 +17,13 @@ public class TestConcert
     @Test
     public void testConcert()
     {
+        //可以看到，获取同一个Bean表演，转换成不同的两个Bean
+        //引入了新的方法performEncore()
         performance.perform();
-
         performance.exit();
+
+        Encoreable encoreable = (Encoreable)performance;
+        encoreable.performEncore();
+
     }
 }
