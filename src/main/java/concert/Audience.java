@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.*;
 @Aspect //将此类转变为一个切面
 public class Audience
 {
-    @Pointcut("execution(* concert.Performance.perform(..))")   //定义命名大切点
+    @Pointcut("execution(* concert.Performance.perform(..))")   //定义命名的切点
     public void  performance() {}
 
     @Before("performance()") //表演之前
